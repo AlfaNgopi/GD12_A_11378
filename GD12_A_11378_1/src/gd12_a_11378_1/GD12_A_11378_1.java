@@ -15,6 +15,21 @@ public class GD12_A_11378_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Kepala directur = new Kepala("DIRECTUR ALFA NADA YULASWARA");
+        Kepala manager = new Kepala("MANAGER 210711378");
+        
+        Karyawan asisten = new Karyawan("Bobi", "Asisten Directur");
+        Karyawan cs = new Karyawan("Mari", "Customer Service");
+        Karyawan sekret = new Karyawan("Studi", "Sekretaris");
+        
+        directur.tambahBawahan(manager);
+        directur.tambahBawahan(asisten);
+        
+        manager.tambahBawahan(cs);
+        manager.tambahBawahan(sekret);
+        
+        directur.showData();
+        
     }
     
 }

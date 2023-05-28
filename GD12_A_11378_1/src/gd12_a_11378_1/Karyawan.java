@@ -9,6 +9,20 @@ package gd12_a_11378_1;
  *
  * @author Alfa
  */
-public class Karyawan {
+public class Karyawan implements IComposite{
+    private String namaKaryawan, jabatan;
 
+    public Karyawan(String namaKaryawan, String jabatan) {
+        this.namaKaryawan = namaKaryawan;
+        this.jabatan = jabatan;
+    }
+
+    @Override
+    public void showData() {
+        System.out.println(namaKaryawan + " - " + jabatan);
+    }
+
+    
+    
+    
 }
