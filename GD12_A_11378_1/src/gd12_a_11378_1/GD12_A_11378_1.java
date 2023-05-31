@@ -15,20 +15,40 @@ public class GD12_A_11378_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Kepala directur = new Kepala("DIRECTUR ALFA NADA YULASWARA");
-        Kepala manager = new Kepala("MANAGER 210711378");
+        Restoran restoran = new Restoran("Restoran Street Food Corner", "JL. Mentari Indah No.15A", 50000000);
         
-        Karyawan asisten = new Karyawan("Bobi", "Asisten Directur");
-        Karyawan cs = new Karyawan("Mari", "Customer Service");
-        Karyawan sekret = new Karyawan("Studi", "Sekretaris");
+        Koki manager = new Koki("Kepala", "Suryanto", 12000000, restoran);
+        restoran.setManager(manager);
         
-        directur.tambahBawahan(manager);
-        directur.tambahBawahan(asisten);
+        Koki agus = new Koki("Kepala", "Agus", 10000000, restoran);
+        Koki nita = new Koki("Biasa", "Nita", 6000000, restoran);
         
-        manager.tambahBawahan(cs);
-        manager.tambahBawahan(sekret);
+        Pelayan rizky = new Pelayan(1,"Rizky", 2000000, restoran);
+        Pelayan jakub = new Pelayan(2,"Jakub", 2700000, restoran);
+        Pelayan nia = new Pelayan(5,"Nia", 4000000, restoran);
+        Pelayan rina = new Pelayan(2,"Rina", 2500000, restoran);
         
-        directur.showData();
+        
+        manager.reckrutBawahan(nita);
+        manager.reckrutBawahan(agus);
+        
+        agus.reckrutBawahan(nia);
+        agus.reckrutBawahan(rina);
+        
+        nita.reckrutBawahan(rizky);
+        nita.reckrutBawahan(jakub);
+        
+        
+        
+        restoran.tampilDataPekerja();
+        
+        System.out.println("--------------------------------");
+        
+        restoran.reservasi(400000, 2);
+        
+        System.out.println("--------------------------------");
+        
+        restoran.tampilDataPekerja();
         
     }
     
