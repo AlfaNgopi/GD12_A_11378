@@ -2,13 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package gd12_a_11378_1;
+package tgs12_a_16;
 
 /**
  *
  * @author ASUS
  */
-public class GD12_A_11378_1 {
+public class TGS12_A_16 {
 
     /**
      * @param args the command line arguments

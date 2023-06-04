@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package gd12_a_11378_1;
+package tgs12_a_16;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,15 +32,15 @@ public class Koki extends Pekerja {
 
     @Override
     public void showData() {
-        System.out.println(" [Koki] " + nama);
-        IComposite.space.append("    ");
+        System.out.println(" [Koki] " + nama + "] - Total Gaji: " + gaji + " IDR");
+        Pekerja.space.append("    ");
         
         for (Pekerja pkj : pekerja) {
-            System.out.print(IComposite.space + " [Bahawan " + nama + "] - Total Gaji: " + gaji + " IDR");
+            System.out.print(Pekerja.space + " [Bahawan " + nama + "]" );
             pkj.showData();
         }
         
-        IComposite.space.setLength(IComposite.space.length() -3);
+        Pekerja.space.setLength(Pekerja.space.length() -3);
     }
 
     @Override

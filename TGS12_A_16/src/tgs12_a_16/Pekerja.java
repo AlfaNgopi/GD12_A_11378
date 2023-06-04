@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package gd12_a_11378_1;
+package tgs12_a_16;
 
 /**
  *
@@ -13,6 +13,8 @@ public abstract class Pekerja {
     protected String nama;
     protected double gaji;
     protected Restoran restoran;
+    
+    public static StringBuffer space = new StringBuffer();
 
     public Pekerja(String nama, double gaji, Restoran restoran) {
         this.nama = nama;

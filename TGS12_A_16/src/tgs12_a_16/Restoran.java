@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package gd12_a_11378_1;
+package tgs12_a_16;
 
 import java.util.ArrayList;
 
@@ -47,7 +47,7 @@ public class Restoran{
     public void reservasi(double hargaReservasi, int lamaReservasi){
         danaRestoran += (hargaReservasi * lamaReservasi) + 250000;
         double bonus;
-        bonus = (hargaReservasi * lamaReservasi) + 250000;
+        bonus =  hargaReservasi * (lamaReservasi/10);
         
         notifyObserver(bonus);
     }
