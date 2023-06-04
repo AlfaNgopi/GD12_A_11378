@@ -53,8 +53,19 @@ public class Restoran{
     }
     
     public void setManager(Koki manager){
-        this.manager = manager;
+        if ("Kepala".equals(manager.getJenis())) {
+            this.manager = manager;
+        }else{
+            System.out.println("Bukan Seorang Kepala Koki!");
+            System.exit(0);
+        }
+        
     }
+    
+    public void showTotalGaji(){
+        System.out.println("");
+        System.out.println("Total Gaji : " + manager.getGaji() + " IDR");
+    } 
     
     
     

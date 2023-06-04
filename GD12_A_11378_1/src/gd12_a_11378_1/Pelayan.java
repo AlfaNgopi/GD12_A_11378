@@ -34,6 +34,11 @@ public class Pelayan extends Pekerja{
         
     }
 
+    @Override
+    public double getGaji() {
+        return gaji;
+    }
+
     
 
 

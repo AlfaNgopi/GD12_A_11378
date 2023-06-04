@@ -17,6 +17,7 @@ public class GD12_A_11378_1 {
         // TODO code application logic here
         Restoran restoran = new Restoran("Restoran Street Food Corner", "JL. Mentari Indah No.15A", 50000000);
         
+//        Koki manager = new Koki("biada", "Suryanto", 12000000, restoran);
         Koki manager = new Koki("Kepala", "Suryanto", 12000000, restoran);
         restoran.setManager(manager);
         
@@ -49,6 +50,8 @@ public class GD12_A_11378_1 {
         System.out.println("--------------------------------");
         
         restoran.tampilDataPekerja();
+        
+        restoran.showTotalGaji();
         
     }
     

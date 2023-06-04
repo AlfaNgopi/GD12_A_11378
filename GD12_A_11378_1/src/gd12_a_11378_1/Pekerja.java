@@ -27,4 +27,6 @@ public abstract class Pekerja {
     
     public abstract void update(double Jumlah);
     
+    public abstract double getGaji();
+    
 }

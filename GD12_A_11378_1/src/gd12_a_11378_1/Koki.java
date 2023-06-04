@@ -60,6 +60,24 @@ public class Koki extends Pekerja {
         
         
     }
+
+    @Override
+    public double getGaji() {
+        double totalGaji = gaji;
+        for (Pekerja pkj : pekerja) {
+            totalGaji += pkj.getGaji();
+        }
+        
+        return totalGaji;
+    }
+
+    public String getJenis() {
+        return jenis;
+    }
+    
+    
+    
+    
     
     
     
